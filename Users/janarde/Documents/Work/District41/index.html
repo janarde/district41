@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <link rel="stylesheet" type="text/css" href="dist/css/bootstrap.min.css">
+    <title>District 41</title>
+</head>
+<body>
+  <div class="banner">
+    <h1>Welcome to district 41 AA</h1>
+  </div>
+  <div class="my-dropdown content"> 
+      <p><h3 class="heading">About District 41</h3></p>
+      <button id="topic-dropdown" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+        Frequently Asked Questions<span class="caret"></span>
+      </button>
+      <ul id="dropdown-list" class="dropdown-menu dropdown" role="menu" data-bind="foreach: topics">
+        <li><a href="#" data-bind="text: $data"></a></li>
+      </ul>
+  </div>
+  <div id="district-info"class="topic alert alert-info alert-dismissable">
+    <button id="info-btn-close" type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+    <span id="answer"></span>
+  </div>
+  <div id="preamble" class="content">
+    <p id="main">Alcoholics Anonymous is a fellowship of men and women who share their experience, strength and hope with each other that they may solve their common problem and help others to recover from alcoholism. The only requirement for membership is a desire to stop drinking. There are no dues or fees for AA membership; we are self-supporting through our own contributions. AA is not allied with any sect, denomination, politics, organization or institution; does not wish to engage in any controversy; neither endorses nor opposes any causes. Our primary purpose is to stay sober and help other alcoholics to achieve sobriety.
+    </p>
+  </div>
+  <div id="schedule" class="content">
+    <a id="link" href="http://schedule.area72aa.org/meetings/schedule.php?function=district&district=41">Click here for a schedule of District 41 meetings.</a>
+  </div>
+  <div id="blurb" class="content">
+    <p id="main">The web committee would appreciate your feedback. Please take a moment to complete the survey at the link below so that we may better serve the needs of our district.</p>
+    <a id="link" href="http://www.surveymonkey.com/s/QPKVT7N">Click here to take survey</a>
+  </div>
+  <script type='text/javascript' src='dist/js/jquery-1.10.2.min.js'></script>
+  <script type='text/javascript' src='dist/js/knockout-3.0.0.js'></script> 
+  <script type='text/javascript' src='content.js'></script>
+  <script type='text/javascript' src='dist/js/bootstrap.min.js'</script>
+  <script type='text/javascript' src='contentController.js'></script>  
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+hr
+{
+  color:sienna;
+}
+.banner
+{
+  padding:100px;
+}
+
+h1
+{
+  text-align:center;
+  #text-shadow: 2px 0px #888888;
+  font-family:"Lucida Console", Monaco, monospace;
+  font-size:2.5em;
+  position:relative;
+}
+
+.heading
+{
+    text-align:center;
+    position:relative;
+    font-family:"Lucida Console", Monaco, monospace;
+    color:#6699FF;
+}
+.content
+{
+  padding:10px;
+  text-align:center;
+  #border:2px solid #a1a1a1;
+  #border-radius:50px;
+  #box-shadow: 5px 5px 2px #888888;
+  margin:10px
+}
+
+.bullet-list
+{
+    text-align:left;
+}
+
+#dropdown-list
+{
+    margin:0 auto;
+    position: relative;
+    text-align: right;
+}
+
+.my-dropdown
+{
+    margin:0 auto;
+    position: relative;
+    text-align: center;
+}
+.topic
+{
+  visibility:hidden;
+  text-align:center;
+  font-family:"Lucida Console", Monaco, monospace;
+  font-size:1em;
+}
+
+#main 
+{
+  text-align:center;
+  font-family:"Lucida Console", Monaco, monospace;
+  font-size:1em;
+  position:relative;
+}
+
+#link
+{
+  font-family:"Lucida Console", Monaco, monospace;
+  font-size:1.25em;
+  position:relative;
+}
+
+#answer
+{
+    display:block;
+}
+
+body 
+{
+  background-image:url('img/background-fade.jpg');
+  background-repeat:no-repeat;
+  background-position:left top;
+}
