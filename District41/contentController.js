@@ -65,6 +65,7 @@ var topics = [who, what, when, where, why, how ];
         });
             $("#info-btn-close").click(function() {
                 $("#district-info").hide();
+                location.reload();
             });
     });    
 }
