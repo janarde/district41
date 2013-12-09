@@ -11,12 +11,14 @@
   </div>
   <div class="my-dropdown content"> 
       <p><h3 class="heading">About District 41</h3></p>
-      <button id="topic-dropdown" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-        Frequently Asked Questions<span class="caret"></span>
-      </button>
-      <ul id="dropdown-list" class="dropdown-menu dropdown" role="menu" data-bind="foreach: topics">
-        <li><a href="#" data-bind="text: $data"></a></li>
-      </ul>
+      <div class="my-dropdown">
+        <button id="topic-dropdown" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+          Frequently Asked Questions<span class="caret"></span>
+        </button>
+          <ul id="dropdown-list" class="my-dropdown-list dropdown-menu dropdown pull-center" role="menu" data-bind="foreach: topics">
+            <li><button type="button" class="btn btn-default btn-list-item" data-bind="text: $data, value: $data"></button></li>
+          </ul>
+      </div>
   </div>
   <div id="district-info"class="topic alert alert-info alert-dismissable">
     <button id="info-btn-close" type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
@@ -37,7 +39,7 @@
   <script type='text/javascript' src='dist/js/knockout-3.0.0.js'></script> 
   <script type='text/javascript' src='content.js'></script>
   <script type='text/javascript' src='dist/js/bootstrap.min.js'</script>
+  <script type='text/javascript' src='dist/js/bootstrap.min.js'</script>
   <script type='text/javascript' src='contentController.js'></script>  
-
 </body>
 </html>

@@ -33,16 +33,9 @@ h1
   margin:10px
 }
 
-.bullet-list
+.btn-list-item
 {
     text-align:left;
-}
-
-#dropdown-list
-{
-    margin:0 auto;
-    position: relative;
-    text-align: right;
 }
 
 .my-dropdown
@@ -51,9 +44,15 @@ h1
     position: relative;
     text-align: center;
 }
+
+.my-dropdown-list
+{
+    width: 100%;
+    margin: auto;
+}
+
 .topic
 {
-  visibility:hidden;
   text-align:center;
   font-family:"Lucida Console", Monaco, monospace;
   font-size:1em;
@@ -77,6 +76,13 @@ h1
 #answer
 {
     display:block;
+}
+
+.open 
+{
+    margin:0 auto;
+    position: relative;
+    text-align: center;
 }
 
 body 

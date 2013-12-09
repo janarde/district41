@@ -23,13 +23,49 @@ function contentController() {
                 answer: "<p>In addition to group-elected GSRs, the District Committee is made up of officers and standing committee chairs. Our officers are trusted servants elected by the GSRs; they are responsible to the groups and do not govern. Beyond the District Committee, AA members from all over Seattle are involved in our various service committees. District 41 has a place for any alcoholic who is interested in service. <br><h3>District Committee Officers:</h3><br><div class='content'><ul class='bullet-list'><li> GSRs</li><li> Alt. GSRs</li><li>DCM</li><li> Alt. DCM</li><li> Treasurer</li><li>Secretary</li></ul></div><br><h3> District Committee Chairs:</h3><br><div class='content'><ul class='bullet-list'><li>Accessibility</li><li>Archives</li><li>Cooperation with Professional Community (CPC)</li><li>Corrections </li><li>Grapevine & Literature</li><li>Public Information (PI)</li><li>Treatment</li><li>Web</li><li>Intergroup Liaison</li></ul></div><p>"
     };
 
+var topics = [who, what, when, where, why, how ];
     var that = this;
     $(document).ready(function() {
         $("#district-info").hide();
         $('.dropdown-toggle').dropdown();
-        $("#info-btn-close").click(function() {
-            $("#district-info").hide();
+        $('.btn-list-item').click(function() {
+            var eval = $(this).attr("value")
+            switch(eval) {
+                case who.question:
+                  $("#district-info").hide();
+                  $("#answer").html(who.answer);
+                  $("#district-info").show();
+                  break;
+                case what.question:
+                  $("#district-info").hide();
+                  $("#answer").html(what.answer);
+                  $("#district-info").show();
+                  break;
+                case when.question:
+                  $("#district-info").hide();
+                  $("#answer").html(when.answer);
+                  $("#district-info").show();
+                  break;
+                case where.question:
+                  $("#district-info").hide();
+                  $("#answer").html(where.answer);
+                  $("#district-info").show();
+                  break;
+                case why.question:
+                  $("#district-info").hide();
+                  $("#answer").html(why.answer);
+                  $("#district-info").show();
+                  break;
+                case how.question:
+                  $("#district-info").hide();
+                  $("#answer").html(how.answer);
+                  $("#district-info").show();
+                  break;                
+            }
         });
+            $("#info-btn-close").click(function() {
+                $("#district-info").hide();
+            });
     });    
 }
 
