@@ -19,6 +19,11 @@ body
   background-position:left top;
 }
 
+img
+{
+    max-width:100%;
+}
+
 .banner
 {
   padding:100px;
